@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noite na Vila</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .frame {
+            width: calc(33.33% - 10px); /* 3 frames per row with some spacing */
+            height: 200px;
+            margin: 5px; /* Adjusted margin to bring squares closer */
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .frame:hover {
+            transform: scale(1.05);
+        }
+
+        .frame img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .center-frame {
+            width: calc(33.33% - 10px); /* 3 frames per row with some spacing */
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .frame-hover:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Noite na Vila</h1>
+    <div class="gallery">
+        <a href="pagina1.html" class="frame frame-hover">
+            <img src="imagem1.jpg" alt="Carta 1">
+        </a>
+        <a href="pagina2.html" class="frame frame-hover">
+            <img src="imagem2.jpg" alt="Carta 2">
+        </a>
+        <a href="pagina3.html" class="frame frame-hover">
+            <img src="imagem3.jpg" alt="Carta 3">
+        </a>
+        <a href="pagina4.html" class="frame frame-hover">
+            <img src="imagem4.jpg" alt="Carta 4">
+        </a>
+        <a href="pagina5.html" class="frame frame-hover">
+            <img src="imagem5.jpg" alt="Carta 5">
+        </a>
+        <a href="pagina6.html" class="frame frame-hover">
+            <img src="imagem6.jpg" alt="Carta 6">
+        </a>
+        <a href="pagina7.html" class="frame frame-hover">
+            <img src="imagem7.jpg" alt="Carta 7">
+        </a>
+    </div>
+</body>
+
+<footer>
+    te amo amor
+</footer>
+</html>
