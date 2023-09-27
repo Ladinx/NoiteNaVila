@@ -6,100 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noite na Vila</title>
     <style>
+        /* Estilos para o corpo da página */
         body {
+            text-align: center;
             font-family: 'dunbar-tall', sans-serif;
+            font-weight: 900;
+            font-style: normal;
             background-color: #251B18;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         h1 {
             font-family: "manicotti", sans-serif;
-            font-size: 36px; /* Aumenta o tamanho do título */
+            font-weight: 500;
+            font-style: normal;
+            font-size: 36px; /* Tamanho menor para dispositivos móveis */
             color: #AD825A;
-            margin: 20px 0;
+            margin-bottom: 20px; /* Espaçamento menor para dispositivos móveis */
         }
+        /* Estilos para o cabeçalho da galeria */
+        .gallery-header {
+            width: 100%;
+            max-width: 100%; /* Largura máxima para telas menores */
+            margin-bottom: 10px; /* Espaçamento menor para dispositivos móveis */
+        }
+        /* Estilos para as imagens no cabeçalho */
         .gallery-header img {
-            max-width: 100%; /* Redimensiona a imagem para caber na tela */
-            height: auto;
+            width: 100%; /* A imagem ocupa a largura total */
+            height: auto; /* A altura se ajusta automaticamente */
         }
+        /* Estilos para a galeria de cartas */
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            width: 100%;
+            max-width: 100%; /* Largura máxima para telas menores */
         }
+        /* Estilos para cada carta individual */
         .frame {
-            width: calc(50% - 20px);
-            margin: 10px;
+            width: calc(50% - 20px); /* Duas cartas por linha para dispositivos móveis */
+            height: 200px; /* Altura menor para dispositivos móveis */
+            margin: 10px; /* Espaçamento menor entre as cartas */
             border: 4px solid #63423A;
             border-radius: 10px;
-            overflow: hidden;
+            overflow: visible;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-decoration: none;
             color: inherit;
+        }
+        /* Efeito de escala ao passar o mouse sobre a carta */
+        .frame:hover {
+            transform: scale(1.05); /* Reduzido o aumento de escala para dispositivos móveis */
+        }
+        /* Estilos para o texto abaixo de cada carta */
+        .frame h2 {
+            margin: 20px 0; /* Espaçamento menor para dispositivos móveis */
+            font-family: 'dunbar-tall', sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 20px; /* Tamanho menor para dispositivos móveis */
+            color: #B38A6A;
+        }
+        /* Estilos para todas as cartas com imagens de fundo */
+        .frame {
             background-size: cover;
             background-position: center center;
         }
-        .frame:nth-child(7) {
-            width: 100%; /* A sétima carta ocupa a largura total da tela */
-        }
-        .frame:hover {
-            transform: scale(1.05);
-        }
-        .frame h2 {
-            margin: 10px;
-            font-size: 20px;
-        }
+
+        /* Estilos para cada carta individual com imagem de fundo */
         .frame:nth-child(1) {
             background-image: url("/Imagens/cidada.jpg");
         }
+
         .frame:nth-child(2) {
             background-image: url("/Imagens/tocheiro.png");
         }
+
         .frame:nth-child(3) {
             background-image: url("/Imagens/vigilante.jpeg");
         }
+
         .frame:nth-child(4) {
             background-image: url("/Imagens/colonizador.jpg");
         }
+
         .frame:nth-child(5) {
             background-image: url("/Imagens/oxedexango.png");
         }
+
         .frame:nth-child(6) {
             background-image: url("/Imagens/santo.jpg");
         }
+
         .frame:nth-child(7) {
             background-image: url("/Imagens/curandeiro.png");
         }
     </style>
 </head>
 <body>
+    <!-- Cabeçalho da Galeria com Imagem -->
     <div class="gallery-header">
-        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho">
+        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho" width="100%">
     </div>
+   
     <h1>Escolha sua carta</h1>
+    <!-- Galeria de Cartas -->
     <div class="gallery">
+        <!-- Carta 1 -->
         <a href="cidadao.html" class="frame">
             <h2>Cidadão</h2>
         </a>
+        <!-- Carta 2 -->
         <a href="tocheiro.html" class="frame">
             <h2>Tocheiro</h2>
         </a>
+        <!-- Carta 3 -->
         <a href="vigilante.html" class="frame">
             <h2>Vigilante</h2>
         </a>
+        <!-- Carta 4 -->
         <a href="colonizador.html" class="frame">
             <h2>Colonizador</h2>
         </a>
+        <!-- Carta 5 -->
         <a href="oxedexango.html" class="frame">
             <h2 style="white-space: nowrap;">Oxe de Xango</h2>
         </a>
+        <!-- Carta 6 -->
         <a href="santo.html" class="frame">
             <h2>Santo</h2>
         </a>
+        <!-- Carta 7 -->
         <a href="curandeiro.html" class="frame">
             <h2>Curandeiro</h2>
         </a>
     </div>
+    <!-- Rodapé da página -->
+    <footer>
+         <!-- Conteúdo do rodapé -->
+    </footer>
 </body>
 </html>
