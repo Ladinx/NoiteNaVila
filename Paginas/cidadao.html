@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Em Construção :)</title>
+    <link rel="stylesheet" href="https://use.typekit.net/euv3zih.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadão</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            text-align: center;
+            font-family: 'dunbar-tall', sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            background-color: #251B18;
+            margin: 0;
+            padding: 0;
+            color: #FFFFFF;
+        }
+        h1 {
+            font-family: "manicotti", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 50px;
+            color: #AD825A;
+            margin-top: 10px;
+        }
+        /* Estilos para o cabeçalho da página */
+        .page-header {
+            width: 100%;
+            margin-top: 10px;
+        }
+        /* Estilos para a imagem no cabeçalho */
+        .page-header img {
+            width: 100%;
+            height: auto;
+        }
+        /* Estilos para o card de seleção */
+        .frame {
+            width: 45%; /* Torna as cartas quadradas */
+            max-width: 250px;
+            margin: 10px;
+            border: 4px solid #63423A;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            background-size: cover;
+            background-position: center center;
+            padding-bottom: 100%; /* Proporção 1:1 (quadrada) */
+            cursor: pointer;
+        }
+        /* Efeito de escala ao passar o mouse sobre o card de seleção */
+        .frame:hover {
+            transform: scale(1.05);
+        }
+        /* Estilos para o texto abaixo do card de seleção */
+        .frame h2 {
+            margin: 10px 0;
+            font-family: 'dunbar-tall', sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 18px;
+            color: #B38A6A;
+        }
+    </style>
 </head>
 <body>
-    <h1>Em Construção :)</h1>
-    <p></p>
+    <!-- Cabeçalho da Página com Imagem -->
+    <div class="page-header">
+        <img src="Imagens/cidada.jpg" alt="Cidadão" width="100%">
+    </div>
+   
+    <h1>Carta 1: Cidadão</h1>
+    <!-- Conteúdo da Carta -->
+    <a href="cidadao.html" class="frame">
+        <h2>E</h2>
+    </a>
+    
+    <p>Sua carta é: Cidadão</p>
+    
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Lembre-se: não é permitido escolher obras de outras cartas.</p>
+        <p>Conheça mais no <a href="museuafrobrasil.html">Museu AfroBrasil</a>.</p>
+    </footer>
 </body>
 </html>
