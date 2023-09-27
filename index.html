@@ -18,47 +18,45 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: vh;
             background-color: #251B18;
             margin: 0;
             padding: 0;
+            height: 100vh;
         }
         h1 {
             font-family: "manicotti", sans-serif;
             font-weight: 500;
             font-style: normal;
-            font-size: 150px;
+            font-size: 36px;
             color: #AD825A;
-            height: 100px;
-            margin-bottom: 170px;
-            margin-top: -20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
         /* Estilos para o cabeçalho da galeria */
         .gallery-header {
             width: 100%;
-            max-width: 800px;
+            max-width: 100%; /* Alterado para ajustar à largura da tela */
             margin-bottom: 20px;
             margin-top: 2px;
         }
         /* Estilos para as imagens no cabeçalho */
         .gallery-header img {
-            height: fit-content;
-            max-width: 100%;
+            width: 100%; /* Tornar a imagem responsiva */
         }
         /* Estilos para a galeria de cartas */
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Centraliza as cartas horizontalmente */
-            width: 100%; /* Largura da galeria */
-            max-width: 800px; /* Largura máxima da galeria */
+            justify-content: center;
+            width: 100%;
+            max-width: 100%; /* Alterado para ajustar à largura da tela */
         }
         /* Estilos para cada carta individual */
         .frame {
-            width: calc(40% - 50px);
-            height: 250px;
-            margin-right: 100px;
-            margin-bottom: 90px;
+            width: 100%;
+            height: auto; /* Altura automática */
+            margin-right: 0;
+            margin-bottom: 20px;
             border: 4px solid #63423A;
             border-radius: 10px;
             overflow: visible;
@@ -66,8 +64,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-decoration: none; /* Remova o sublinhado do link */
-            color: inherit; /* Use a cor padrão do texto */
+            text-decoration: none;
+            color: inherit;
         }
         /* Efeito de escala ao passar o mouse sobre a carta */
         .frame:hover {
@@ -75,63 +73,49 @@
         }
         /* Estilos para o texto abaixo de cada carta */
         .frame h2 {
-            margin: 250px;
-            font-family: 'dunbar-tall', sans-serif;
-            font-weight: 900;
-            font-style: normal;
-            font-size: 30px;
-            color: #B38A6A;
+            margin: 10px;
+            font-size: 20px;
         }
         /* Estilos para todas as cartas com imagens de fundo */
         .frame {
-            background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-            background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+            background-size: cover;
+            background-position: center center;
         }
 
         /* Estilos para cada carta individual com imagem de fundo */
         .frame:nth-child(1) {
-            background-image: url("Imagens/cidada.jpg"); /* Defina a URL da imagem de fundo */
+            background-image: url("/Imagens/cidada.jpg");
         }
 
         .frame:nth-child(2) {
-            background-size: 66%;
-            background-position: center;
-            background-image: url("Imagens/tocheiro.png"); /* Defina a URL da imagem de fundo */
+            background-image: url("/Imagens/tocheiro.png");
         }
 
         .frame:nth-child(3) {
-            background-image: url("Imagens/vigilante.jpeg"); /* Defina a URL da imagem de fundo */
+            background-image: url("/Imagens/vigilante.jpeg");
         }
 
         .frame:nth-child(4) {
-            background-size: 100%;
-            background-position: 15% 30%;
-            background-image: url("Imagens/colonizador.jpg"); /* Defina a URL da imagem de fundo */
+            background-image: url("/Imagens/colonizador.jpg");
         }
 
         .frame:nth-child(5) {
-            background-size: 70%;
-            background-position: center;
-            background-image: url("Imagens/oxedexango.png"); /* Defina a URL da imagem de fundo */
+            background-image: url("/Imagens/oxedexango.png");
         }
 
         .frame:nth-child(6) {
-            background-size: 90%;
-            background-position: 10% 25%;
-            background-image: url("Imagens/santo.jpg"); /* Defina a URL da imagem de fundo */
+            background-image: url("/Imagens/santo.jpg");
         }
 
         .frame:nth-child(7) {
-            background-size: 70%;
-            background-position: 50% 35%;
-            background-image: url("Imagens/curandeiro.png"); /* Defina a URL da imagem de fundo */
+            background-image: url("/Imagens/curandeiro.png");
         }
     </style>
 </head>
 <body>
     <!-- Cabeçalho da Galeria com Imagem -->
     <div class="gallery-header">
-        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho" width="440px">
+        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho" width="100%">
     </div>
    
     <h1>Escolha sua carta</h1>
@@ -150,7 +134,7 @@
             <h2>Vigilante</h2>
         </a>
         <!-- Carta 4 -->
-        <a href="colonizador.html" class="frame">
+        <a href="colonizador.html" class "frame">
             <h2>Colonizador</h2>
         </a>
         <!-- Carta 5 -->
