@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/euv3zih.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cidadão</title>
+    <title>Escolha Sua Obra</title>
     <style>
         /* Estilos para o corpo da página */
         body {
@@ -15,75 +15,89 @@
             background-color: #251B18;
             margin: 0;
             padding: 0;
-            color: #FFFFFF;
         }
         h1 {
             font-family: "manicotti", sans-serif;
             font-weight: 500;
             font-style: normal;
-            font-size: 50px;
+            font-size: 30px; /* Tamanho do título reduzido para dispositivos móveis */
             color: #AD825A;
             margin-top: 10px;
         }
-        /* Estilos para o cabeçalho da página */
-        .page-header {
+        /* Estilos para o cabeçalho com imagem */
+        .header {
             width: 100%;
             margin-top: 10px;
         }
-        /* Estilos para a imagem no cabeçalho */
-        .page-header img {
+        /* Estilos para a imagem do cabeçalho */
+        .header img {
             width: 100%;
             height: auto;
         }
-        /* Estilos para o card de seleção */
-        .frame {
-            width: 45%; /* Torna as cartas quadradas */
+        /* Estilos para a mensagem sobre a escolha da obra */
+        .user-message {
+            color: #AD825A;
+            font-size: 18px; /* Tamanho do texto reduzido para dispositivos móveis */
+            margin-top: 20px; /* Maior margem superior para separar do cabeçalho */
+        }
+        /* Estilos para a galeria de obras */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        /* Estilos para cada obra individual */
+        .artwork {
+            width: 100%; /* Ocupa a largura total em dispositivos móveis */
             max-width: 250px;
             margin: 10px;
-            border: 4px solid #63423A;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s;
-            text-decoration: none;
-            color: inherit;
-            background-size: cover;
-            background-position: center center;
-            padding-bottom: 100%; /* Proporção 1:1 (quadrada) */
-            cursor: pointer;
         }
-        /* Efeito de escala ao passar o mouse sobre o card de seleção */
-        .frame:hover {
-            transform: scale(1.05);
-        }
-        /* Estilos para o texto abaixo do card de seleção */
-        .frame h2 {
-            margin: 10px 0;
-            font-family: 'dunbar-tall', sans-serif;
-            font-weight: 900;
-            font-style: normal;
-            font-size: 18px;
-            color: #B38A6A;
+
+        /* Estilos para a imagem do cabeçalho em dispositivos móveis */
+        @media (max-width: 600px) {
+            .header img {
+                max-width: 50%;
+                height: auto;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Cabeçalho da Página com Imagem -->
-    <div class="page-header">
-        <img src="/Imagens/cidada.jpg" alt="Cidadão" width="100%">
+    <!-- Cabeçalho com Imagem -->
+    <div class="header">
+        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho" width="10%">
     </div>
-   
-    <h1>Carta 1: Cidadão</h1>
-    <!-- Conteúdo da Carta -->
-    <a href="cidadao.html" class="frame">
-        <h2>E</h2>
-    </a>
-    
-    <p>Sua carta é: Cidadão</p>
-    
+
+    <!-- Mensagem sobre a escolha da obra -->
+    <div class="user-message">
+        Sua carta é: Cidadão! <hr></hr>
+        
+        Escolha a obra que deseja que o represente:
+    </div>
+
+    <!-- Galeria de Obras -->
+    <div class="gallery">
+        <!-- Obra 1 -->
+        <a href="URL_DA_PRIMEIRA_OBRA" class="artwork">
+            <img src="URL_DA_IMAGEM_DA_PRIMEIRA_OBRA" alt="Obra 1" width="100%">
+        </a>
+        <!-- Obra 2 -->
+        <a href="URL_DA_SEGUNDA_OBRA" class="artwork">
+            <img src="URL_DA_IMAGEM_DA_SEGUNDA_OBRA" alt="Obra 2" width="100%">
+        </a>
+        <!-- Obra 3 -->
+        <a href="URL_DA_TERCEIRA_OBRA" class="artwork">
+            <img src="URL_DA_IMAGEM_DA_TERCEIRA_OBRA" alt="Obra 3" width="100%">
+        </a>
+        <!-- Obra 4 -->
+        <a href "URL_DA_QUARTA_OBRA" class="artwork">
+            <img src="URL_DA_IMAGEM_DA_QUARTA_OBRA" alt="Obra 4" width="100%">
+        </a>
+    </div>
+
     <!-- Rodapé da página -->
     <footer>
-        <p>Lembre-se: não é permitido escolher obras de outras cartas.</p>
-        <p>Conheça mais no <a href="museuafrobrasil.html">Museu AfroBrasil</a>.</p>
+        <h2><a href="URL_DO_SITE_DO_MUSEU_AFROBRASIL"Visite também o <a href="URL_DO_SITE_DO_MUSEU_AFROBRASIL">Visite também o site do museu AfroBrasil!</a></h2>
     </footer>
 </body>
 </html>
