@@ -56,6 +56,8 @@
             align-items: center;
             text-decoration: none;
             color: inherit;
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+            background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
         }
         /* Efeito de escala ao passar o mouse sobre a carta */
         .frame:hover {
@@ -70,18 +72,50 @@
             font-size: 20px; /* Tamanho menor para dispositivos móveis */
             color: #B38A6A;
         }
-        /* Estilos para a imagem de fundo da carta */
-        .frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        /* Estilos para cada carta individual com imagem de fundo */
+        .frame:nth-child(1) {
+            background-image: url("/Imagens/cidada.jpg"); /* Defina a URL da imagem de fundo */
+        }
+
+        .frame:nth-child(2) {
+            background-size: 66%;
+            background-position: center;
+            background-image: url("/Imagens/tocheiro.png"); /* Defina a URL da imagem de fundo */
+        }
+
+        .frame:nth-child(3) {
+            background-image: url("/Imagens/vigilante.jpeg"); /* Defina a URL da imagem de fundo */
+        }
+
+        .frame:nth-child(4) {
+            background-size: 100%;
+            background-position: 15% 30%;
+            background-image: url("/Imagens/colonizador.jpg"); /* Defina a URL da imagem de fundo */
+        }
+
+        .frame:nth-child(5) {
+            background-size: 70%;
+            background-position: center;
+            background-image: url("/Imagens/oxedexango.png"); /* Defina a URL da imagem de fundo */
+        }
+
+        .frame:nth-child(6) {
+            background-size: 90%;
+            background-position: 10% 25%;
+            background-image: url("/Imagens/santo.jpg"); /* Defina a URL da imagem de fundo */
+        }
+
+        .frame:nth-child(7) {
+            background-size: 70%;
+            background-position: 50% 35%;
+            background-image: url("/Imagens/curandeiro.png"); /* Defina a URL da imagem de fundo */
         }
     </style>
 </head>
 <body>
     <!-- Cabeçalho da Galeria com Imagem -->
     <div class="gallery-header">
-        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho" width="100%">
+        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho" width="70%">
     </div>
    
     <h1>Escolha sua carta</h1>
@@ -89,37 +123,30 @@
     <div class="gallery">
         <!-- Carta 1 -->
         <a href="cidadao.html" class="frame">
-            <img src="/Imagens/cidada.jpg" alt="Cidadão">
             <h2>Cidadão</h2>
         </a>
         <!-- Carta 2 -->
         <a href="tocheiro.html" class="frame">
-            <img src="/Imagens/tocheiro.png" alt="Tocheiro">
             <h2>Tocheiro</h2>
         </a>
         <!-- Carta 3 -->
         <a href="vigilante.html" class="frame">
-            <img src="/Imagens/vigilante.jpeg" alt="Vigilante">
             <h2>Vigilante</h2>
         </a>
         <!-- Carta 4 -->
         <a href="colonizador.html" class="frame">
-            <img src="/Imagens/colonizador.jpg" alt="Colonizador">
             <h2>Colonizador</h2>
         </a>
         <!-- Carta 5 -->
         <a href="oxedexango.html" class="frame">
-            <img src="/Imagens/oxedexango.png" alt="Oxe de Xango">
             <h2 style="white-space: nowrap;">Oxe de Xango</h2>
         </a>
         <!-- Carta 6 -->
         <a href="santo.html" class="frame">
-            <img src="/Imagens/santo.jpg" alt="Santo">
             <h2>Santo</h2>
         </a>
         <!-- Carta 7 -->
         <a href="curandeiro.html" class="frame">
-            <img src="/Imagens/curandeiro.png" alt="Curandeiro">
             <h2>Curandeiro</h2>
         </a>
     </div>
