@@ -26,8 +26,8 @@
         }
         /* Estilos para o cabeçalho da galeria */
         .gallery-header {
-            width: 100%;
-            margin-top: 20px;
+            width: 70%;
+            margin-top: 0px;
         }
         /* Estilos para as imagens no cabeçalho */
         .gallery-header img {
@@ -37,17 +37,17 @@
         /* Estilos para a galeria de cartas */
         .gallery {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
         }
         /* Estilos para cada carta individual */
         .frame {
-            width: 45%; /* Torna as cartas quadradas */
+            width: 80%; /* Torna as cartas quadradas */
             max-width: 250px;
             margin: 10px;
             border: 4px solid #63423A;
             border-radius: 10px;
-            overflow: hidden;
+            overflow: visible;
             transition: transform 0.3s;
             text-decoration: none;
             color: inherit;
@@ -56,7 +56,7 @@
         }
         /* Efeito de escala ao passar o mouse sobre a carta */
         .frame:hover {
-            transform: scale(1.05);
+            transform: scale(1.30);
         }
         /* Estilos para o texto abaixo de cada carta */
         .frame h2 {
