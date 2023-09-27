@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Em Construção :)</title>
+    <link rel="stylesheet" href="https://use.typekit.net/euv3zih.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha Sua Obra</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            text-align: center;
+            font-family: 'dunbar-tall', sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            background-color: #251B18;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: "manicotti", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30px;
+            color: #AD825A;
+            margin-top: 10px;
+        }
+        /* Estilos para o cabeçalho com imagem */
+        .header {
+            width: 100%;
+            margin-top: 10px;
+        }
+        /* Estilos para a imagem do cabeçalho */
+        .header img {
+            width: 5%;
+            height: auto;
+        }
+        /* Estilos para a mensagem sobre a escolha da obra */
+        .user-message {
+            color: #AD825A;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 500; /* Adicionado negrito para enfatizar a mensagem */
+        }
+        /* Estilos para a galeria de obras */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        /* Estilos para cada obra individual (container pai) */
+        .artwork {
+            width: 28%; /* Ajustado para mostrar 3 obras em uma linha */
+            margin: 10px;
+        }
+        /* Estilos para as imagens dentro dos containers pai */
+        .artwork img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Em Construção :)</h1>
-    <p></p>
+    <!-- Cabeçalho com Imagem -->
+    <div class="header">
+        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho">
+    </div>
+
+    <!-- Mensagem sobre a escolha da obra -->
+    <div class="user-message">
+        Sua carta é: Oxê de Xangô! <hr></hr>
+        Escolha a obra que deseja que o represente:
+    </div>
+    <!-- Galeria de Obras (2 obras) -->
+    <div class="gallery">
+        <!-- Obra 1 -->
+        <a href="https://online.museuafrobrasil.org.br/acervo/oxe-de-xango/" class="artwork">
+            <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/1387/MAB_2430_L4.jpg" alt="Obra 1">
+        </a>
+        <!-- Obra 2 -->
+        <a href="https://online.museuafrobrasil.org.br/acervo/oxe-de-xango-2/" class="artwork">
+            <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/4605/MAB_0619_L1.jpg" alt="Obra 2">
+        </a>
+    </div>
+    <!-- Rodapé da página -->
+    <footer>
+        <h2 style="color: #AD825A;"><a href="http://www.museuafrobrasil.org.br/o-museu/apresentacao">Visite também o site do museu AfroBrasil!</a></h2>
+    </footer>
 </body>
 </html>
