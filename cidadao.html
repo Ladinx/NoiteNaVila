@@ -20,7 +20,7 @@
             font-family: "manicotti", sans-serif;
             font-weight: 500;
             font-style: normal;
-            font-size: 30px; /* Tamanho do título reduzido para dispositivos móveis */
+            font-size: 30px;
             color: #AD825A;
             margin-top: 10px;
         }
@@ -31,14 +31,14 @@
         }
         /* Estilos para a imagem do cabeçalho */
         .header img {
-            width: 10%; /* Tamanho original do thumbnail_Ativo */
+            width: 10%;
             height: auto;
         }
         /* Estilos para a mensagem sobre a escolha da obra */
         .user-message {
             color: #AD825A;
-            font-size: 18px; /* Tamanho do texto reduzido para dispositivos móveis */
-            margin-top: 20px; /* Maior margem superior para separar do cabeçalho */
+            font-size: 18px;
+            margin-top: 20px;
         }
         /* Estilos para a galeria de obras */
         .gallery {
@@ -48,16 +48,9 @@
         }
         /* Estilos para cada obra individual */
         .artwork {
-            width: 25%; /* Ocupa a largura total em dispositivos móveis */
+            width: 50%; /* Tamanho reduzido para imagens pequenas */
             max-width: 250px;
             margin: 10px;
-        }
-
-        /* Estilos para as imagens das obras em dispositivos móveis */
-        @media (max-width: 150px) {
-            .header img {
-                max-width: 50%;
-            }
         }
     </style>
 </head>
