@@ -15,6 +15,7 @@
             background-color: #251B18;
             margin: 0;
             padding: 0;
+            text-decoration: none;
         }
         h1 {
             font-family: "manicotti", sans-serif;
@@ -24,6 +25,19 @@
             color: #AD825A;
             margin-top: 10px;
         }
+        h2 {
+            font-family: 'dunbar-tall', sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 15px; 
+            color: #B38A6A;
+            margin: 0;
+            margin-top: 3px;
+            padding: 0;
+            word-break: normal;
+            text-decoration: none;
+        }
+
         /* Estilos para o cabeçalho com imagem */
         .header {
             width: 100%;
@@ -31,31 +45,36 @@
         }
         /* Estilos para a imagem do cabeçalho */
         .header img {
-            width: 5%;
-            height: auto;
+            margin-top: 20px;
+            max-width: 60%; 
         }
         /* Estilos para a mensagem sobre a escolha da obra */
         .user-message {
             color: #AD825A;
-            font-size: 18px;
-            margin-top: 20px;
-            font-weight: 500; /* Adicionado negrito para enfatizar a mensagem */
+            font-size: 25px;
+            margin-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            word-break:keep-all;
         }
         /* Estilos para a galeria de obras */
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            text-decoration: none;
         }
         /* Estilos para cada obra individual (container pai) */
         .artwork {
-            width: 28%; /* Ajustado para mostrar 7 obras em uma linha */
+            width: 30%; 
             margin: 10px;
         }
         /* Estilos para as imagens dentro dos containers pai */
         .artwork img {
-            width: 100%;
+            width: 100%; 
             height: auto;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -67,7 +86,7 @@
 
     <!-- Mensagem sobre a escolha da obra -->
     <div class="user-message">
-        Sua carta é: Colonizador! <hr></hr>
+        Sua carta é: <br> Colonizador! <hr></hr>
         Escolha a obra que deseja que o represente:
     </div>
 
@@ -76,36 +95,44 @@
         <!-- Obra 1 -->
         <a href="https://online.museuafrobrasil.org.br/acervo/sem-titulo-retrato-do-barao-de-sao-clemente/" class="artwork">
             <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/5189/MAB_0262_FF.jpg" alt="Obra 1">
+            <h2>Retrato do Barao de São Clemente</h2>
         </a>
         <!-- Obra 2 -->
         <a href="https://online.museuafrobrasil.org.br/acervo/uniao-seguro-de-vida-de-escravos/" class="artwork">
             <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/3886/MAB_ARQ_0014_FF.jpg" alt="Obra 2">
+            <h2>Seguro de Vida de Escravos</h2>
         </a>
         <!-- Obra 3 -->
         <a href="https://online.museuafrobrasil.org.br/acervo/sem-titulo-retrato-do-barao-de-sao-clemente-2/" class="artwork">
             <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/5773/MAB_0264_FF.jpg" alt="Obra 3">
+            <h2>Retrato do Barão de São Clemente 2</h2>
         </a>
         <!-- Obra 4 -->
         <a href="https://online.museuafrobrasil.org.br/acervo/mercado-escravo-em-pernambuco/" class="artwork">
             <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/6128/MAB_2414_FF.jpg" alt="Obra 4">
+            <h2>Mercado Escravo em Pernambuco</h2>
         </a>
         <!-- Obra 5 -->
         <a href="https://online.museuafrobrasil.org.br/acervo/punicoes-publicas-no-campo-de-santanna-viagem-pitoresca-atraves-do-brasil/" class="artwork">
             <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/6154/MAB_2436_FF.jpg" alt="Obra 5">
+            <h2>Punições Publicas em Campo de Santana</h2>
         </a>
         <!-- Obra 6 -->
         <a href="https://online.museuafrobrasil.org.br/acervo/vista-geral-de-fazenda-de-cafe/" class="artwork">
             <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/6677/MAB_2362_FR.jpg" alt="Obra 6">
+            <h2>Vista Geral de Fazenda de Cafe</h2>
         </a>
         <!-- Obra 7 -->
         <a href="https://online.museuafrobrasil.org.br/acervo/gabinete/" class="artwork">
             <img src="https://online.museuafrobrasil.org.br/wp-content/uploads/tainacan-items/107/13421/MAB_2302_FF-scaled.jpg" alt="Obra 7">
+            <h2>Gabinete</h2>
         </a>
     </div>
-    <!-- Rodapé da página -->
+
     <footer>
-        <h2 style="color: #AD825A;"><a href="http://www.museuafrobrasil.org.br/o-museu/apresentacao">Visite também o site do museu AfroBrasil!</a></h2>
-        <h2 style="color: #AD825A;">O jogador pode escolher apenas obras de sua carta!</h2>
+        <h2 style="color: #AD825A; padding-top: 5px;"><a href="http://www.museuafrobrasil.org.br/o-museu/apresentacao">Visite também o site do museu AfroBrasil!</a></h2>
+        <h2 style="color: #AD825A; padding: 10px; padding-bottom: 15px;">O jogador pode escolher apenas obras de sua carta!</h2>
     </footer>
 </body>
 </html>
+

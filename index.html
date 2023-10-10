@@ -2,6 +2,8 @@
 <html lang="pt-BR">
 <head>
     <link rel="stylesheet" href="https://use.typekit.net/euv3zih.css">
+    <link href="https://www.dafontfree.net/embed/aW1pYAWN0LXJlZ3VsYXImZGF0YS8yNS9p/LzEyOTYxMi9pbXBhY3TqLiz.jpg" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/euv3zih.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noite na Vila</title>
@@ -12,6 +14,10 @@
             font-family: 'dunbar-tall', sans-serif;
             font-weight: 900;
             font-style: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             background-color: #251B18;
             margin: 0;
             padding: 0;
@@ -22,122 +28,101 @@
             font-style: normal;
             font-size: 50px;
             color: #AD825A;
-            margin-top: 10px;
+            margin: 0px 0 40px;
+            width: 95%; 
         }
         /* Estilos para o cabeçalho da galeria */
         .gallery-header {
-            width: 100%;
-            margin-top: 10px;
+            margin-top: 20px;
+            max-width: 60%; /* Reduz a largura máxima do cabeçalho */
         }
         /* Estilos para as imagens no cabeçalho */
         .gallery-header img {
-            width: 100%;
+            width: 100%; /* Preenche todo o espaço disponível */
+            max-width: none;
             height: auto;
         }
         /* Estilos para a galeria de cartas */
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: center; /* Centraliza as cartas horizontalmente */
+            width: 90%; /* Reduz a largura da galeria */
+            padding-left: 30px;
         }
         /* Estilos para cada carta individual */
         .frame {
-            width: 45%; /* Torna as cartas quadradas */
-            max-width: 250px;
-            margin: 10px;
+            width: calc(40% - 20px);
+            height: 200px; /* Reduz a altura das cartas */
+            margin: 0 35px 50px 0; /* Espaçamento entre as cartas */
             border: 4px solid #63423A;
             border-radius: 10px;
-            overflow: hidden;
+            overflow: visible;
             transition: transform 0.3s;
-            text-decoration: none;
-            color: inherit;
-            background-size: cover;
-            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none; /* Remova o sublinhado do link */
+            color: inherit; /* Use a cor padrão do texto */
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+            background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
         }
         /* Efeito de escala ao passar o mouse sobre a carta */
         .frame:hover {
-            transform: scale(1.05);
+            transform: scale(1.15); /* Reduz a escala ao passar o mouse */
         }
         /* Estilos para o texto abaixo de cada carta */
         .frame h2 {
-            margin: 10px 0;
             font-family: 'dunbar-tall', sans-serif;
             font-weight: 900;
             font-style: normal;
-            font-size: 18px;
+            font-size: 24px; /* Reduz o tamanho da fonte */
             color: #B38A6A;
-        }
-        /* Estilos para as cartas com imagens de fundo */
-        .frame:nth-child(1) {
-            background-image: url("Imagens/cidada.jpg");
-        }
-
-        .frame:nth-child(2) {
-            background-image: url("Imagens/tocheiro.png");
-        }
-
-        .frame:nth-child(3) {
-            background-image: url("Imagens/vigilante.jpeg");
-        }
-
-        .frame:nth-child(4) {
-            background-image: url("Imagens/colonizador.jpg");
-        }
-
-        .frame:nth-child(5) {
-            background-image: url("Imagens/oxedexango.png");
-        }
-
-        .frame:nth-child(6) {
-            background-image: url("Imagens/santo.jpg");
-        }
-
-        .frame:nth-child(7) {
-            background-image: url("Imagens/curandeiro.png");
+            margin: 205px 0; /* Espaçamento entre o texto e a borda da carta */
         }
     </style>
 </head>
 <body>
     <!-- Cabeçalho da Galeria com Imagem -->
     <div class="gallery-header">
-        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho" width="100%">
+        <img src="Imagens/thumbnail_Ativo 1.png" alt="Imagem do Cabeçalho">
     </div>
    
     <h1>Escolha sua carta</h1>
     <!-- Galeria de Cartas -->
     <div class="gallery">
         <!-- Carta 1 -->
-        <a href="https://ladinx.github.io/NoiteNaVila/cidadao.html" class="frame">
+        <a href="cidadao.html" class="frame" style="background-image: url('Imagens/cidada.jpg');">
             <h2>Cidadão</h2>
         </a>
         <!-- Carta 2 -->
-        <a href="https://ladinx.github.io/NoiteNaVila/tocheiro.html" class="frame">
+        <a href="tocheiro.html" class="frame" style="background-image: url('Imagens/tocheiro.png');">
             <h2>Tocheiro</h2>
         </a>
         <!-- Carta 3 -->
-        <a href="https://ladinx.github.io/NoiteNaVila/vigilante.html" class="frame">
+        <a href="vigilante.html" class="frame" style="background-image: url('Imagens/vigilante.jpeg');">
             <h2>Vigilante</h2>
         </a>
         <!-- Carta 4 -->
-        <a href="https://ladinx.github.io/NoiteNaVila/colonizador.html" class="frame">
+        <a href="colonizador.html" class="frame" style="background-image: url('Imagens/colonizador.jpg');">
             <h2>Colonizador</h2>
         </a>
         <!-- Carta 5 -->
-        <a href="https://ladinx.github.io/NoiteNaVila/colonizador.html" class="frame">
+        <a href="oxedexango.html" class="frame" style="background-image: url('Imagens/oxedexango.png');">
             <h2 style="white-space: nowrap;">Oxe de Xango</h2>
         </a>
         <!-- Carta 6 -->
-        <a href="https://ladinx.github.io/NoiteNaVila/santo.html" class="frame">
+        <a href="santo.html" class="frame" style="background-image: url('Imagens/santo.jpg');">
             <h2>Santo</h2>
         </a>
         <!-- Carta 7 -->
-        <a href="https://ladinx.github.io/NoiteNaVila/curandeiro.html" class="frame">
+        <a href="curandeiro.html" class="frame" style="background-image: url('Imagens/curandeiro.png');">
             <h2>Curandeiro</h2>
         </a>
     </div>
     <!-- Rodapé da página -->
     <footer>
-        <!-- Conteúdo do rodapé -->
+         <!-- Conteúdo do rodapé -->
     </footer>
 </body>
 </html>
